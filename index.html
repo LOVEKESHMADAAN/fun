@@ -76,8 +76,9 @@
       };
         function mousecount(event)
         {
-            var mousex=event.pageX;
-            var mousey=event.pageY;
+            
+            var mousex=event.clientX;
+            var mousey=event.clientY;
             return{
             y:mousey,
             x:mousex    
