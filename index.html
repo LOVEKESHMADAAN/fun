@@ -38,31 +38,31 @@
             canvas=document.getElementById("game");
             canvascontext=canvas.getContext("2d");
             setInterval(both,1000/frameset);
-            canvas.addEventListener("mousemove",function(event)
+            canvas.addEventListener("touchmove",function(event)
              { 
               paddley=mousecount(event).y-paddleheight/2;
              });
-            canvas.addEventListener("touchmove",function(event){
+            canvas.addEventListener("click",function(event){
              if(mousecount(event).x>200&&mousecount(event).x<260&&mousecount(event).y>10&&mousecount(event).y<40)
                  reset();
             });
-                 canvas.addEventListener("touchmove",function(event){
+                 canvas.addEventListener("click",function(event){
              if(mousecount(event).x>300&&mousecount(event).x<360&&mousecount(event).y>10&&mousecount(event).y<40)
                  alert("GAME IS PAUSED PRESS OK FOR CONTINUE");
                       
                  });
-              canvas.addEventListener("touchmove",function(event){
+              canvas.addEventListener("click",function(event){
              if(mousecount(event).x>400&&mousecount(event).x<460&&mousecount(event).y>10&&mousecount(event).y<40)
                  ballsx=13;
                   ballsy=9;
                                           });
-              canvas.addEventListener("touchmove",function(event){
+              canvas.addEventListener("click",function(event){
              if(mousecount(event).x>500&&mousecount(event).x<560&&mousecount(event).y>10&&mousecount(event).y<40)
                   ballsx=18;
                   ballsy=14;
                 
             });
-            canvas.addEventListener("touchmove",function(event){
+            canvas.addEventListener("click",function(event){
              if(mousecount(event).x>600&&mousecount(event).x<660&&mousecount(event).y>10&&mousecount(event).y<40)
                   ballsx=24;
                   ballsy=19;
