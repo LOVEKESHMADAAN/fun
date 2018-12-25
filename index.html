@@ -40,7 +40,7 @@
             setInterval(both,1000/frameset);
             canvas.addEventListener("touchmove",function(event)
              { 
-              paddley=mousecount(event).y-paddleheight/2;
+              paddley=touchmove(event).y-paddleheight/2;
              });
             canvas.addEventListener("click",function(event){
              if(mousecount(event).x>200&&mousecount(event).x<260&&mousecount(event).y>10&&mousecount(event).y<40)
